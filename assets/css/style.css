@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/rz-regular.woff2);
+  }
+@font-face {
+    font-family: Maison;
+    src: url(../fonts/maison-neue-mono.woff2);
+  }
+  *{
+      margin:0;
+      padding:0;
+  }
+  body{
+      margin:0;
+      font-family:Regular,Maison,Raleway,Tajawal,sans-serif;
+
+  }
+  nav{/*Stylen der Nav Leiste*/
+      display:flex;
+      justify-content: flex-end;
+      
+      height:2vh;    
+  }
+  input:first-child{
+      background-color:white;
+      color:white;
+  }
+  input:last-child{
+      background-color:black;
+      color:black;
+      
+  }
+ a{ /*text-deco von allen a elementen entfernt*/
+      text-decoration: none;
+      color:#000;
+  }
+  header a{
+      padding-top:1%;
+  }
+  ul{
+      list-style: none;
+      display:flex;
+      flex-basis:100%;
+      justify-content: flex-end;
+      align-items:baseline;
+      border-bottom:solid 0.1vh #333;
+      padding-bottom:3%;
+  }
+  ul a{
+      
+      flex-basis:10%;
+  }
+  ul a:first-of-type{
+      flex-basis:60%;
+  }
+  /*Hero*/
+  h1{
+      font-size:13vh;
+      display:inline-block;
+      
+  }
+  .bordered{
+      color:white;
+    -webkit-text-stroke: 2px black;
+  }
+  #headline{
+      margin:10%;
+  }
+  #hero{
+      
+      background-image:url("../img/wo-left.png"),url("../img/landspace-mid.png"),url("../img/man-right.jpg");
+      background-position-x:-3vw,39vw,73vw;
+      background-position-y:30vh,50vh,20vh;
+      background-repeat: no-repeat;
+      background-attachment:cover;
+      height:120vh;
+  }
+  /*Article Pixelgeschubse fertig machen später*/
+  #article{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      height:100vh;
+      
+
+  }
+  #article div{
+      display:flex;
+      justify-content:space-evenly;
+      align-items:  baseline;
+      height:30%;
+
+  }
+  #article h2{
+      font-size:3.5vh;
+      line-height: 4.5vh;
+      margin-right:3%;
+  }
+  #article h6{
+      padding-bottom:5vh;
+  }
+  #article div article:nth-child(1){
+      padding-left:30vh;
+  }
+  #article div article:nth-child(2){
+    flex-basis:40%;
+}
+
+/*Bildergalerie*/
+#gallery div{
+    display:flex;
+    margin:15% 0;
+    height:30%;
+}
+.right{
+    justify-content: flex-end;
+}
+.left{
+    justify-content:flex-start;
+}
+.right  article{
+    text-align:right;
+   
+}
+#gallery div article h6{
+    padding-top:25vh;
+}
+#gallery h2{
+    font-size:5vh;
+}
+#gallery h2:hover{
+    text-decoration: underline;
+    cursor:text;
+}
+.left h2{
+    padding-left:20vh;
+    
+}
+.left h6{
+    padding-left:20vh;
+}
+.right h6{
+    padding-right:20vh;
+}
+.right h2{
+    padding-right:20vh;
+}
+/*stylen vom footer*/
+footer{
+    background-color:#000;
+    color:#fff;
+    height:70vh;
+}
+footer h2{
+    font-size:13vh;
+    padding:10% 0 5% 10%;
+}
+footer a{ /*Stylen des buttons*/
+    color:white;
+    font-size: 2.5vh;
+    border:solid 0.5vh #fff;
+    padding:1% 5%;
+    margin:0 0 0 10%;
+}
+footer a:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+/*Impressum*/
+#impressum{
+    height:5vh;
+    text-align: center;
+}
+#impressum h5{
+    padding:2% 0;
+}
